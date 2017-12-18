@@ -38,10 +38,9 @@ def getAvailableLetters(lettersGuessed):
     '''
     # FILL IN YOUR CODE HERE...
     alphabet = "abcdefghijklmnopqrstuvwxyz"
-    newstr = ""
+    
     for i in lettersGuessed:
         if i in alphabet:
             alphabet = alphabet.replace(i, "")
     return alphabet
 
-print(getAvailableLetters(['e', 'i', 'k', 'p', 'r', 's']))
